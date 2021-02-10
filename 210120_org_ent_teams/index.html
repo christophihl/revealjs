@@ -44,16 +44,19 @@
 		<script src="../plugin/markdown/markdown.js"></script>
 		<script src="../plugin/highlight/highlight.js"></script>
 		<script src="../plugin/zoom/zoom.js"></script>
-		<script src="../plugin/search/search.js"></script>
+		<script src="../plugin /search/search.js"></script>
 		<script src="../plugin/menu/menu.js"></script>
 		<script src="../plugin/math/math.js"></script>
 		<script src="../plugin/chalkboard/plugin.js"></script>
 		<script src="../plugin/pdfexport/pdfexport.js"></script>
+		<script src="../plugin/chalkboard/screenfull.min.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				// embedded: true,
 				controls: true,
 				controlsTutorial: true,
 				// Determines where controls appear, "edges" or "bottom-right"
@@ -75,9 +78,6 @@
 				// Custom scaling 4/3 ipad
 				width: 1440,
 				height: 1020,
-				// Default scaling 4/3
-				// width: 960,
-				// height: 700,
 				margin: 0.04,
 				minScale: 0.1,
 				maxScale: 1.0,
@@ -95,7 +95,8 @@
 			        chalkEffect: 0,
 			        src: "../plugin/chalkboard/chalkboard.json",
 			        readOnly: undefined,
-			        toggleChalkboardButton: { left: "80px", bottom: "30px", top: "auto", right: "auto" },
+			        fullscreenButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+					toggleChalkboardButton: { left: "80px", bottom: "30px", top: "auto", right: "auto" },
 			        toggleNotesButton: { left: "130px", bottom: "30px", top: "auto", right: "auto" },
 			        downloadButton: { left: "180px", bottom: "30px", top: "auto", right: "auto" },
 			        transition: 800,
